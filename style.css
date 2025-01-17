@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "GowunBatang-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-image: url("image/wall.jpg");
+  background-size: cover;
+  font-family: "GowunBatang-Regular";
+}
+
+.container {
+  background-color: antiquewhite;
+  height: 100vh; /* 뷰포트는 실제 내용이 표시되는 영역. 1vh는 뷰포트 높이의 1%와 같음. 100vh는 100%로 화면 전체 높이를 의미. */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  max-width: 900px;
+}
+
+#add-button {
+  border: 2px solid #f3656f;
+  background-color: #f3656f;
+  color: white;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+#add-button:hover {
+  background-color: rgba(255, 255, 0, 0.626);
+  border: rgba(255, 255, 0, 0.626);
+}
+
+.task-tabs {
+  border: 2px solid gainsboro;
+  display: flex;
+  font-weight: bold;
+  margin-top: 15px;
+  position: relative;
+}
+
+.task-tabs div {
+  padding: 15px;
+  cursor: pointer;
+}
+
+#under-line {
+  background-color: #f3656f;
+  padding: 0px;
+  width: 58px;
+  height: 5px;
+  position: absolute;
+  left: 0px;
+  top: 50px;
+  transition: 0.5s;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid gainsboro;
+}
+
+.task-done {
+  text-decoration: line-through double;
+}
+
+.button-area button {
+  border: none;
+  background-color: antiquewhite;
+  width: 50px;
+  transition: 0.5s;
+}
+
+.button-area button:hover {
+  background-color: rgba(255, 255, 0, 0.626);
+}
